@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="form.css">
+    <title>formulário</title>
+</head>
+<body>
+    <form>
+        nome de usuário: <input type="text">
+        senha: <input type="password">
+        e-mail: <input type="email">
+        CPF: <input type="number">
+        Data de nascimento: <input type="date">
+        Sexo: <select>
+            <option value=""></option>
+            <option value="">Masculino</option>
+            <option value="">Feminino</option>
+            <option value="">Outro</option>
+            <option value="">Celta rebaixado</option>
+        </select>
+        <br>
+        Endereço<input type="text">
+        CEP <input type="number">
+    <a href="sitedoscalvos.html"><input type="button" value="cadastrar"></a> 
+
+    <script>
+    var Mat = window.prompt('nota matemática');
+    var His = window.prompt('nota história');
+    var Port = window.prompt('nota português');
+    var Geo = window.prompt('nota geografia');
+
+    var nota = Number(Mat)
+    var nota = Number(His)
+    var nota = Number(Port)
+    var nota = Number(Geo)
+    
+var media = (Mat + His + Port + Geo) / 4
+
+if (media >=7) {
+    window.alert(`aprovado: ${media}`);
+} else {
+    window.alert(`reprovado: ${media}`);
+}
+</script>
+    </form>
+</body>
+
+</html>

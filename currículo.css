@@ -1,0 +1,14 @@
+h1{text-align: center;}
+body{
+    border: 5px solid black;
+    background-image: url(imagens/wallpaper\ CV.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: black;
+}
+ul{
+    text-align: justify;
+}
+footer{
+    text-align: center;
+}
