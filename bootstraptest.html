@@ -13,7 +13,7 @@
     .container{
         display: flex;
         flex-direction: row;
-        margin-left: -15px;
+        margin-left: -10px;
     }
 </style>
 
@@ -21,9 +21,15 @@
     <h1>bem-vindo ao site dos clubes</h1>
     <button type="button" class="btn">cadastre seu clube</button>
     <button type="button" class="btn btn-primary">categorias</button>
-    <button type="button" class="btn btn-secondary">sobre nós</button>
-    <button type="button" class="btn btn-success">Siga nas redes socias<div class="dropdown">
-        <button class="btn btn-danger dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false"> ajude a manter o site
+    <a href="missaovisao.html"><button class="btn btn-secondary" type="button" >Sobre nós </button></a>
+    
+    <button class="btn btn-success dropdown-toggle" type="button" data-bs-toggle="dropdown">Siga nas redes sociais </button>
+        <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="https://www.instagram.com/">Instagram</a></li>
+            <li><a class="dropdown-item" href="https://x.com/x.">X</a></li>
+            <li><a class="dropdown-item" href="https://pt-br.facebook.com/">Facebook</a></li>
+        </ul>
+        <button class="btn btn-danger dropdown-toggle" type="button" data-bs-toggle="dropdown"> ajude a manter o site   
         </button>
         <ul class="dropdown-menu">
           <li><a class="dropdown-item" href="#">doação voluntária</a></li>
@@ -35,8 +41,8 @@
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
 
-    <div class="container">
-        <div class="card" style="width: 18rem;">
+    <div class="container"> 
+        <div class="card" style="width: 22rem;"> 
             <img src="/imagens/clube dos carecas.jpg" class="card-img-top" alt="...">
             <div class="card-body">
                 <h5 class="card-title">Associação Careca Power</h5>
@@ -47,7 +53,7 @@
             </div>
         </div>
         <div class="container">
-        <div class="card" style="width: 18rem;">
+        <div class="card" style="width: 22rem;">
             <img src="/imagens/Dio Vascaino.jpg" height="200" >
             <div class="card-body">
                 <h5 class="card-title">JoJo Club</h5>
@@ -64,7 +70,7 @@
                     <a href="#" class="btn btn-primary">clique e conheça</a>
         </div>
         
-            
+            <link rel="stylesheet" href="bootstrap.css">
 </body>
 
 </html>
