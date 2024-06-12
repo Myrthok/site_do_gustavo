@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>primeiros passos com DOM</title>
+</head>
+<style>
+    body {
+        background-image: url(/imagens/Toothless-dancing-toothless.gif);
+        color: blue;
+        font: normal 18pt Arial;
+    }
+</style>
+
+<body>
+    <h1>buscando dados</h1>
+    <form>
+        <input type="text" id="nome" />
+        <input type="email" id="email" />
+
+        <div id="rescadastro"></div>
+        <input type="button" value="cadastro de usuário" onclick="cadastrar()" />
+    </form>
+    <script>
+        function cadastrar() {
+            var nome = window.document.getElementById("nome").value;
+            var email = window.document.getElementById("email").value;
+            var rescadastro = window.document.getElementById("rescadastro");
+
+            rescadastro.innerHTML = `seu nome é ${nome} <br> e seu email é ${email}`;
+        }        
+    </script>
+</body>
+
+</html>

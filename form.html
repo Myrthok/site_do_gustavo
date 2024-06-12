@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="form.css">
     <title>formulário</title>
 </head>
+
 <body>
     <form>
         nome de usuário: <input type="text">
@@ -24,28 +25,29 @@
         <br>
         Endereço<input type="text">
         CEP <input type="number">
-    <a href="sitedoscalvos.html"><input type="button" value="cadastrar"></a> 
+        <a href="sitedoscalvos.html"><input type="button" value="cadastrar"></a>
+    </form>
 
     <script>
-    var Mat = window.prompt('nota matemática');
-    var His = window.prompt('nota história');
-    var Port = window.prompt('nota português');
-    var Geo = window.prompt('nota geografia');
+        var Mat = window.prompt('nota matemática');
+        var His = window.prompt('nota história');
+        var Port = window.prompt('nota português');
+        var Geo = window.prompt('nota geografia');
 
-    var nota = Number(Mat)
-    var nota = Number(His)
-    var nota = Number(Port)
-    var nota = Number(Geo)
-    
-var media = (Mat + His + Port + Geo) / 4
+        var nota1 = Number(Mat)
+        var nota2 = Number(His)
+        var nota3 = Number(Port)
+        var nota4 = Number(Geo)
 
-if (media >=7) {
-    window.alert(`aprovado: ${media}`);
-} else {
-    window.alert(`reprovado: ${media}`);
-}
-</script>
-    </form>
+        var media = (nota1 + nota2 + nota3 + nota4) / 4
+
+        if (media >= 7) {
+            window.alert(`aprovado: ${media}`);
+        } else {
+            window.alert(`reprovado: ${media}`);
+        }
+        
+    </script>
 </body>
 
 </html>
