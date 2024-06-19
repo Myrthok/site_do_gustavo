@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Velocidade</h1>
+    <form>
+        <input type="number" id="velo">
+        <p id="resVelo"></p>
+        <input type="button" value="Calcular Velocidade" onclick="velocidade()">
+    </form>
+    <script>
+        function velocidade() {
+            var velo = Number(document.getElementById('velo').value);
+            var resVelo = document.getElementById('resVelo');
+
+            if (velo == 60) {
+                resVelo.innerHTML = 'prossiga'
+                resVelo.style.color = 'green'
+            } else if (velo == 80) {
+                resVelo.innerHTML = 'reduza a velocidade'
+                resVelo.style.color = 'yellow'
+            } else if (velo > 80) {
+                resVelo.innerHTML = 'você foi multado'
+                resVelo.style.color = 'red'
+            }
+        }
+    </script>
+</body>
+
+</html>
