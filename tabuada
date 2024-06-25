@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Digitar</h1>
+    <form>
+      <input type="number" id="num" />
+      <div id="resultado"></div>
+      <input type="button" value="Calcular" onclick="calcular()" />
+    </form>
+    <script>
+    
+      var cont = 0;
+      var soma = 0;
+      function calcular() {
+        var num = Number(document.getElementById("num").value);
+        var result = document.getElementById("resultado");
+
+        do {
+          if (num == 999) {
+            alert("Você digitou 999");
+            //result.style.display = 'none';
+            break;
+          }
+          soma += num;
+          cont++;
+          document.getElementById("num").value = "";
+          break;
+        } while (num != 999);
+        result.innerHTML = `Foram digitados ao todo ${cont} numeros e a soma dos valores é ${soma}`;
+}
+    </script>
+  </body>
+</html>
