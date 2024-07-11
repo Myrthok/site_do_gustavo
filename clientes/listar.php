@@ -53,6 +53,7 @@ include_once('conexao.php');
         echo "E-mail: " . $row_user['email'] . "<br>";
         echo "CPF: " . $row_user['cpf'] . "<br>";
         echo "Sexo: " . $row_user['sexo'] . "<br>";
+        echo "<a href='edit_usuario.php?id=". $row_user['id']."'>Editar</a> <br>";
     }
     
     //Limitar os links antes e depois
