@@ -11,7 +11,7 @@ session_start();
     <script src="js/jquery.mask.min.js" type="text/javascript"></script>
     <script type="text/javascript">
         $(document).ready(function () {
-            $("#cpf").mask("000.000.000-00");
+            $("#cpf").mask("###.###.###-##");
         })
     </script>
     <title>Document</title>

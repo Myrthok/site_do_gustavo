@@ -4,7 +4,7 @@ include_once ('conexao.php');
 
 $nome = filter_input(INPUT_POST, 'nome', FILTER_SANITIZE_STRING);
 $email = filter_input(INPUT_POST, 'email', FILTER_SANITIZE_EMAIL);
-$cpf = filter_input(INPUT_POST, 'cpf', FILTER_SANITIZE_NUMBER_INT);
+$cpf = filter_input(INPUT_POST, 'cpf', FILTER_SANITIZE_STRING);
 $sexo = filter_input(INPUT_POST, 'sexo', FILTER_SANITIZE_STRING);
 
 // echo "Nome: $nome <br>";

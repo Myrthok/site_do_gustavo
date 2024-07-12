@@ -12,6 +12,7 @@ include_once('conexao.php');
     <title>CRUD-Listar</title> 
     <link rel="stylesheet" href="listar.css">
     
+    
 </head>
 <body>
     
@@ -47,13 +48,15 @@ include_once('conexao.php');
     //Quantidade de página
     $quantidade_pg = ceil($row_pg['num_result'] / $qnt_result_pg);
     
-    while ($row_user = mysqli_fetch_assoc($selected_user)) {
+    while ($row_user = mysqli_fetch_assoc($selected_user)){
         echo "ID: " . $row_user['id'] . "<br>";
         echo "Nome: " . $row_user['nome'] . "<br>";
         echo "E-mail: " . $row_user['email'] . "<br>";
         echo "CPF: " . $row_user['cpf'] . "<br>";
         echo "Sexo: " . $row_user['sexo'] . "<br>";
         echo "<a href='edit_usuario.php?id=". $row_user['id']."'>Editar</a> <br>";
+        echo "<a href = 'proc_apagar_usuario.php?id=". $row_user['id']." '>Apagar</a> <br> <br>";
+    
     }
     
     //Limitar os links antes e depois

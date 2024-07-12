@@ -15,6 +15,13 @@ $row_usuario = mysqli_fetch_assoc($resultado_usuario);
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Editar-CRUD</title>
     <link rel="stylesheet" href="listar.css">
+    <script src="js/jquery-3.7.1.min.js" type="text/javascript"></script>
+    <script src="js/jquery.mask.min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#cpf").mask("###.###.###-##");
+        })
+    </script>
 </head>
 
 <body>
@@ -35,7 +42,7 @@ $row_usuario = mysqli_fetch_assoc($resultado_usuario);
             <label>email:</label>
             <input type="email" name="email" placeholder="digite o seu email" value="<?php echo $row_usuario['email']; ?>"> <br><br>
             <label>CPF:</label>
-            <input type="number" id="cpf" name="cpf" placeholder="CPF" value="<?php echo $row_usuario['cpf']; ?>"> <br><br>
+            <input type="text" id="cpf" name="cpf" placeholder="CPF" value="<?php echo $row_usuario['cpf']; ?>"> <br><br>
             Sexo: <select name="sexo" value="<?php echo $row_usuario['sexo']; ?>">
                 <option>M</option>
                 <option>F</option>
